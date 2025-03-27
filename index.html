@@ -55,7 +55,14 @@
 
           <div class="scan-webcam__content__results">
             <h3>Results</h3>
-            <div id="scan-webcam__content__results__labels"></div>
+            <div id="scan-webcam__content__results__labels">
+              <p class="labels__item">Keyboard: 0%</p>
+              <p class="labels__item">Mouse: 0%</p>
+              <p class="labels__item">Monitor: 0%</p>
+              <p class="labels__item">PC-Case: 0%</p>
+              <p class="labels__item">Nothing: 0%</p>
+              <p class="labels__item">Headphone: 0%</p>
+            </div>
           </div>
         </div>
       </section>
@@ -66,7 +73,6 @@
         </header>
 
         <div class="upload-file__content">
-          <!-- Botão que chama a função para abrir o seletor de arquivos -->
           <button
             id="uploadButton"
             onclick="openFilePicker()"
@@ -75,7 +81,6 @@
             Upload Image
           </button>
 
-          <!-- Input de arquivo (escondido) -->
           <input
             type="file"
             id="uploadInput"
@@ -83,7 +88,6 @@
             accept="image/*"
           />
 
-          <!-- Imagem carregada -->
           <img
             id="uploadedImage"
             class="upload-file__content__image"
@@ -91,10 +95,16 @@
             alt="Loaded Image"
           />
 
-          <!-- Resultados -->
           <div class="upload-file__content__results">
             <h3>Results</h3>
-            <div id="upload-file__content__results__labels"></div>
+            <div id="upload-file__content__results__labels">
+              <p class="labels__item">Keyboard: 0%</p>
+              <p class="labels__item">Mouse: 0%</p>
+              <p class="labels__item">Monitor: 0%</p>
+              <p class="labels__item">PC-Case: 0%</p>
+              <p class="labels__item">Nothing: 0%</p>
+              <p class="labels__item">Headphone: 0%</p>
+            </div>
           </div>
         </div>
       </section>
