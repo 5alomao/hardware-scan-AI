@@ -7,6 +7,8 @@
 
   & .scan-webcam__header,
   & .upload-file__header {
+    margin: 0 auto;
+    width: fit-content;
     border-bottom: 3px solid var(--beige);
     padding-bottom: 5px;
   }

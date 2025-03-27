@@ -25,6 +25,8 @@
         bottom: 2rem;
         font-size: 14px;
         text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
 

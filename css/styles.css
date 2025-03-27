@@ -21,10 +21,26 @@
 body {
   overflow-x: hidden;
   background-color: #333;
+  max-width: 992px;
+  margin: 0 auto;
 }
 
 .labels__item {
   text-align: left;
   font-weight: 600;
+  font-size: 1.2rem;
   color: var(--beige-dark);
+}
+
+#scan-webcam__content__results__labels,
+#upload-file__content__results__labels {
+    margin-top: 3rem;
+  display: grid;
+  padding: 1rem;
+  border: 1px solid var(--beige-dark);
+  background-color: var(--white);
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-around;
+  align-items: center;
 }
