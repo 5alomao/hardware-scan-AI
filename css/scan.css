@@ -1,0 +1,46 @@
+.scan-webcam,
+.upload-file {
+  height: 100vh;
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--white);
+
+  & .scan-webcam__header,
+  & .upload-file__header {
+    border-bottom: 3px solid var(--beige);
+    padding-bottom: 5px;
+  }
+
+  & .scan-webcam__content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    & #scan-webcam__content__viewer {
+      width: 300px;
+      display: block;
+      height: 300px;
+      border: 1px solid var(--beige);
+      margin: 0 auto;
+    }
+
+    & .scan-webcam__content__button {
+      margin: 3rem auto 0 auto;
+      border: none;
+      background-color: var(--beige);
+      width: 150px;
+      height: 40px;
+      font-size: 1rem;
+      font-weight: 600;
+      box-shadow: 0 0 15px 5px var(--white);
+      transition: ease-in-out 0.3s;
+
+      &:hover {
+        background-color: var(--white);
+        color: var(--beige-dark);
+        cursor: pointer;
+        box-shadow: 0 0 15px 10px var(--beige);
+      }
+    }
+  }
+}

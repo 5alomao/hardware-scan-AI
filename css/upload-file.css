@@ -1,0 +1,42 @@
+.hidden-input {
+  display: none; /* Esconde o input */
+}
+
+.upload-file {
+  background-color: var(--beige-light);
+  & .upload-file__content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    & .upload-file__content__button {
+      margin: 3rem auto 0 auto;
+      border: none;
+      background-color: var(--beige);
+      width: 150px;
+      height: 40px;
+      font-size: 1rem;
+      font-weight: 600;
+      box-shadow: 0 0 15px 5px var(--white);
+      transition: ease-in-out 0.3s;
+
+      &:hover {
+        background-color: var(--white);
+        color: var(--beige-dark);
+        cursor: pointer;
+        box-shadow: 0 0 15px 10px var(--beige);
+      }
+    }
+
+    & .upload-file__content__image {
+      width: 300px;
+      display: block;
+      object-fit: contain;
+      height: 300px;
+      border: 1px solid var(--beige);
+      margin: 0 auto;
+    }
+
+   
+  }
+}

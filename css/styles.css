@@ -1,0 +1,30 @@
+@import url("/css/hero.css");
+@import url("/css/scan.css");
+@import url("/css/upload-file.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--black);
+}
+
+:root {
+  --white: #fff;
+  --black: #333;
+  --beige: #c9bdab;
+  --beige-light: #e2dcd3;
+  --beige-dark: #5c492e;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #333;
+}
+
+.labels__item {
+  text-align: left;
+  font-weight: 600;
+  color: var(--beige-dark);
+}
