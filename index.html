@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="author"
+      content="Salomão Ferreira Junior and Leonardo Paiva Pinto"
+    />
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+
+    <title>Hardware Scan AI</title>
+  </head>
+
+  <body>
+    <main>
+      <section class="hero">
+        <div class="hero__container">
+          <h1>Hardware Scan AI</h1>
+          <p>
+            Use your
+            <strong class="hero__container__header__strong">webcam</strong> or
+            <strong class="hero__container__header__strong"
+              >upload a file</strong
+            >
+            to identify your hardware
+          </p>
+
+          <a href="#scan-webcam"
+            ><button class="hero__container__button">Test Now</button></a
+          >
+
+          <p>
+            An AI-powered hardware recognition system using Teachable Machine to
+            identify peripherals like mouse, keyboard, monitor, case, and
+            headphones.
+          </p>
+        </div>
+      </section>
+      <section id="scan-webcam" class="scan-webcam">
+        <header class="scan-webcam__header">
+          <h2>Use your Webcam to scan</h2>
+        </header>
+
+        <div class="scan-webcam__content">
+          <button class="scan-webcam__content__button" onclick="initWebcam()">
+            Start Webcam
+          </button>
+
+          <div id="scan-webcam__content__viewer"></div>
+
+          <div class="scan-webcam__content__results">
+            <h3>Results</h3>
+            <div id="scan-webcam__content__results__labels"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="upload-file" class="upload-file">
+        <header class="upload-file__header">
+          <h2>Upload your file to scan</h2>
+        </header>
+
+        <div class="upload-file__content">
+          <!-- Botão que chama a função para abrir o seletor de arquivos -->
+          <button
+            id="uploadButton"
+            onclick="openFilePicker()"
+            class="upload-file__content__button"
+          >
+            Upload Image
+          </button>
+
+          <!-- Input de arquivo (escondido) -->
+          <input
+            type="file"
+            id="uploadInput"
+            class="hidden-input"
+            accept="image/*"
+          />
+
+          <!-- Imagem carregada -->
+          <img
+            id="uploadedImage"
+            class="upload-file__content__image"
+            src=""
+            alt="Loaded Image"
+          />
+
+          <!-- Resultados -->
+          <div class="upload-file__content__results">
+            <h3>Results</h3>
+            <div id="upload-file__content__results__labels"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
