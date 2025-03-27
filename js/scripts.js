@@ -44,7 +44,7 @@ async function predict(imageElement, container) {
 
   prediction.forEach((p) => {
     const paragraph = document.createElement("p");
-    paragraph.innerText = `${p.className}: ${p.probability.toFixed(2)}`;
+    paragraph.innerText = `${p.className}: ${p.probability.toFixed(2) * 100}%`;
     paragraph.classList.add("labels__item");
     container.appendChild(paragraph);
   });
